@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cronômetro</title>
+  <link rel="stylesheet" href="/src/styles/style.css"/>
+</head>
+<body>
+
+  <div class="app">
+
+    <div class="clock">
+      <svg class="clock__ring" viewBox="0 0 220 220">
+        <circle class="clock__track" cx="110" cy="110" r="100"/>
+        <circle class="clock__progress" id="progress" cx="110" cy="110" r="100"/>
+      </svg>
+      <div class="clock__display">
+        <span class="clock__time" id="time">00<span class="clock__sep">:</span>00<span class="clock__ms">00</span></span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn--secondary" id="lapBtn" disabled>Volta</button>
+      <button class="btn btn--primary" id="startBtn">Iniciar</button>
+      <button class="btn btn--secondary" id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div class="laps" id="laps"></div>
+
+  </div>
+
+  <script src="/src/scripts/script.js"></script>
+</body>
+</html>
